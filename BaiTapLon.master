@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="BaiTapLon.master.cs" Inherits="BaiTapLon" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="BaiTapLon.css" type="text/css" rel="Stylesheet"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 543px;
+        }
+        .auto-style2 {
+            width: 215px;
+        }
+    </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+    <div class="menubar">
+        <asp:Menu ID="Menu1" runat="server" CssClass="aspMenu1" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/GioiThieu.aspx" Text="Giới Thiệu|" Value="Giới Thiệu|">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/DangNhap.aspx" Text="Đăng Nhập|" Value="Đăng Nhập|"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Dangky.aspx" Text="Đăng Ký|" Value="Đăng Ký|"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/LienHe.aspx" Text="Liên Hệ|" Value="Liên Hệ"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+    <div class="logo">
+        <table>
+        <tr><td class="auto-style2">
+                <asp:ImageButton ID="ImageButton1" runat="server" Height="105px" PostBackUrl="~/Default.aspx" Width="212px" DescriptionUrl="~/TrangChu.aspx" ImageUrl="~/anhnen/logo1.png" />
+            </td>
+            <td class="auto-style1">
+                <asp:TextBox ID="Search" runat="server" CssClass="searchbox"></asp:TextBox>
+            </td>
+            <td>
+                <asp:ImageButton ID="ImageButton2" runat="server" CssClass="searchbutton" ImageUrl="~/anhnen/kinhlup.png" />
+            </td>
+        </tr>
+        </table>
+    </div>
+    <div class="sidebar">
+        <asp:Menu ID="Menu3" runat="server" Orientation="Horizontal" CssClass="aspMenu2" StaticDisplayLevels="2" StaticEnableDefaultPopOutImage="False">
+            <Items>
+                <asp:MenuItem NavigateUrl="~/TrangChu.aspx" Text="TRANG CHỦ" Value="TRANG CHỦ"></asp:MenuItem>
+                <asp:MenuItem Text="HÀNG BÁN CHẠY" Value="HÀNG BÁN CHẠY"></asp:MenuItem>
+                <asp:MenuItem Text="HÀNG GIẢM GIÁ" Value="HÀNG GIẢM GIÁ"></asp:MenuItem>
+                <asp:MenuItem Text="PHIẾU ƯU ĐÃI" Value="PHIẾU ƯU ĐÃI"></asp:MenuItem>
+                <asp:MenuItem Text="QUAY TRÚNG THƯỞNG" Value="QUAY TRÚNG THƯỞNG"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+    </div>
+    <div class="middle">
+        <table class="middle">
+            <tr>
+                <td class="content">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="rightbar">
+                    <div class="MenuRight">
+                    <asp:Menu ID="Menu2" runat="server" CssClass="aspMenu" >
+                        <Items>
+                            <asp:MenuItem Text="Danh Mục Sản Phẩm" Value="Danh Mục Sản Phẩm" Enabled="False" Selectable="False"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ Nam" Value="Đồng Hồ Nam" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ Nữ" Value="Đồng Hồ Nữ" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ Casio" Value="Đồng Hồ Casio" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ Orinet" Value="Đồng Hồ Orinet" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ FX" Value="Đồng Hồ FX" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ G-shock" Value="Đồng Hồ G-shock" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Đồng Hồ Casio" Value="Đồng Hồ Larva" NavigateUrl="~/DongHoNam.aspx"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        <p>Nhóm 9</p>
+        <p>GVHD: Đặng Thanh Dũng</p>
+        <p>Email: tdd.edu.video@gmail.com</p>
+    </div>
+    </form>
+</body>
+</html>

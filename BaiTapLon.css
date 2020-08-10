@@ -1,0 +1,272 @@
+﻿body {
+    background-color: #CCFFCC;
+}
+.link {
+
+}
+    .link *:hover {
+        color:red;
+    }
+.searchbox {
+    border: thin solid #000000;
+    padding: 20px;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 136px;
+    text-align: center;
+    vertical-align: middle;
+    height:45px;
+    width:600px;
+    text-align:left;
+}
+.searchbutton {
+    margin-top: 9px;
+    height:45px;
+}
+
+.img {
+    Height:365px;
+    Width:400px;
+    border: 2px solid red;
+
+}
+.hoverimage img{
+-webkit-transform:scale(0.8); /*Webkit: Thu nhỏ kích thước ảnh còn 0.8 so với ảnh gốc*/
+-moz-transform:scale(0.8); /*Thu nhỏ đối với Mozilla*/
+-o-transform:scale(0.8); /*Thu nhỏ đối với Opera*/
+-webkit-transition-duration: 0.5s; /*Webkit: Thời gian phóng to, nhỏ ảnh*/
+-moz-transition-duration: 0.5s; /*Như trên*/
+-o-transition-duration: 0.5s; /*Như trên*/
+opacity: 0.7; /*Độ mờ của hình ảnh*/
+margin: 0 10px 5px 0; /*căn đều giữa ảnh*/
+}
+.hoverimage img:hover{
+-webkit-transform:scale(1.1); /*Webkit: Tăng kích cỡ ảnh lên 1.1 lần*/
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+box-shadow:0px 0px 30px gray; /*Đổ bóng bằng CSS3*/
+-webkit-box-shadow:0px 0px 30px gray;
+-moz-box-shadow:0px 0px 30px gray; 
+opacity: 1; /*Độ mờ của hình ảnh*/
+}
+.header {
+  background-color: red;
+  color: #58257b;
+  padding: 10px;
+  text-align: center;
+}
+.aspMenu1 * {
+    background-color: #FF6600;
+    font-size: 12pt;
+    color: white;
+    margin: 0;
+}
+.aspMenu2 * {
+    background-color: #CCCCCC;
+    font-size: 12pt;
+    color: white;
+    margin: 10px;
+}
+.aspMenu {
+    float:right !important;
+}
+.aspMenu1 {
+    float:right !important;
+}
+.aspMenu2 {
+    flex-align:center !important;
+}
+.aspMenu * {
+    background-color: #CCCCCC;
+    font-size: 12pt;
+    color: #000000;
+    margin: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+}
+.aspMenu3 * {
+
+}
+.aspMenu {
+}
+.MenuRight {
+    height:1700px;
+    margin-right: 0px;
+}
+.sidebar {
+    display: table;
+    width: 100%;
+    background-color: #CCCCCC;
+}
+.menubar {
+    display: table;
+    width: 100%;
+    background-color: #FF6600;
+}
+.menubar1 {
+    display:table;
+    width:100%;
+    background-color:;
+}
+.aspMenu *:hover {
+    background-color: #C0C0C0;
+    color:red;
+}
+.aspMenu2 *:hover {
+    background-color: #C0C0C0;
+    color:red;
+}
+.aspMenu1 *:hover {
+    color:red;
+}
+.aspMenu3 *:hover {
+    color:red;
+}
+.logo {
+    background-color:orange;
+    width:100%;
+}
+.middle {
+    width:100%;
+}
+.content {
+    width:1100px;
+    height:1700px;
+}
+.content1 {
+
+}
+    .content1 tr td {
+        border: 2px solid black;
+    }
+.content2 {
+}
+.content3 {
+}
+    .content3 tr th {
+        width:200px;
+        border-bottom: 1px solid black;
+        text-align:left;
+    }
+    .content3 tr th td {
+        width:200px;
+    }
+.content4 {
+}
+    .content4 tr th {
+        width:200px;
+        border-bottom: 1px solid black;
+        text-align:left;
+    }
+    .content4 tr th td {
+        width:200px;
+    }
+
+.button {
+    height: 70px;
+    width: 200px;
+    background-color: #0099FF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.button1 {
+    border-style: solid;
+    border-width: thin;
+    height: 70px;
+    width: 200px;
+    font-weight: bold;
+}
+.rightbar {
+    height: 1700px;
+    border-left: solid 1px;
+    border-left-color: #666666;
+}
+
+.footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+.img1 {vertical-align: middle;
+       height:400px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+    top: 1px;
+    left: 3px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 16px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.giamoi {
+    color:red;
+}
+.giacu {
+    text-decoration: line-through;
+}
